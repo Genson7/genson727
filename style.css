@@ -296,7 +296,7 @@ a {
 
 /* INDEX-Page */
 .index-h1 {
-  display: block;
+  /* display: block; */
   color: var(--lite);
   font-size: 1.2rem;
   letter-spacing: 1.5px;
