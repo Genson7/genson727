@@ -296,14 +296,15 @@ a {
 /* END OF HERO SECTION */
 
 /* INDEX-Page */
-.index-h1 {
-  /* display: block; */
+/* .index-h1 {
+  display: block; 
   color: var(--lite);
   font-size: 1.2rem;
   letter-spacing: 1.5px;
   margin-top: 5rem;
   text-transform: uppercase;
-}
+} */
+
 a.index-brand--index {
   font-size: 2.5rem;
 
@@ -322,7 +323,7 @@ a.index-brand--index {
 
 .index-brand--index:hover {
   color: #00ff00;
-} 
+}  
 
 /* GALLERY PAGE*/
 .gallery-box {
@@ -366,6 +367,9 @@ span {
   width: 100%;
 }
 
+/* .gallery-h2 {
+  color: #ff0000;
+} */
 .main-gallery {
   position: relative;  
   margin-top: 1rem;
