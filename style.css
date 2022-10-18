@@ -121,7 +121,7 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: var(--txt-shdo);
-  transition: 0.7s ease;
+  transition: 1s ease;
 }
 
 .nav-link:hover {
@@ -288,6 +288,8 @@ a {
   border: 5px solid var(--lite);
   margin: 0;
   padding: 0 auto;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .hero-image--02 {
@@ -573,7 +575,7 @@ span {
     gap: 0;
     text-align: center;
     width: 100%;
-    transition: 0.7s ease-in-out;   
+    transition: 1s ease-in-out;   
     position: absolute;
     margin-top: 1rem;
   }
