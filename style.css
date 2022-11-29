@@ -84,12 +84,12 @@ a {
   color: #22eb08;
 }
 
-.index-brand {
+/* .index-brand {
   color: var(--dark);
   font-size: 2.5rem;
   padding: 1px 0;
   text-decoration: none;
-}
+} */
 
 .navbar {
   background-color: #000;
@@ -309,7 +309,6 @@ a {
 
 a.index-brand--index {
   font-size: 2.5rem;
-
   background-image: linear-gradient(
     90deg,
     red,
@@ -321,6 +320,8 @@ a.index-brand--index {
   );
   background-clip: text;
   color: transparent;
+  margin-top: 0.05em;
+  padding: 0.2em;
 }
 
 .index-brand--index:hover {
