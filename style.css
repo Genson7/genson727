@@ -497,7 +497,8 @@ span {
   }
 
   .nav-link--gallery {
-    background-image: linear-gradient(
+    color: #fff;
+    /* background-image: linear-gradient(
       90deg,
       #ea00ff,
       blue,
@@ -508,7 +509,7 @@ span {
 
     );
     background-clip: text;
-    color: transparent;
+    color: transparent; */
     text-transform: uppercase;
   }
 
