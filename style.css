@@ -497,19 +497,7 @@ span {
   }
 
   .nav-link--gallery {
-    color: #fff;
-    /* background-image: linear-gradient(
-      90deg,
-      #ea00ff,
-      blue,
-      green,
-      #00ff00,
-      orange,
-      red
-
-    );
-    background-clip: text;
-    color: transparent; */
+    color: #fff;   
     text-transform: uppercase;
   }
 
@@ -601,17 +589,7 @@ span {
   }
 
   .nav-link--gallery {
-    background-image: linear-gradient(
-      90deg,
-      #ea00ff,
-      blue,
-      #00ff00,
-      #ffd900,
-      orange,
-      red
-    );
-    background-clip: text;
-    color: transparent;
+    color: #fff;
   }
 
   .nav-link--gallery:hover {
