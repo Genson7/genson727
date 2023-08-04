@@ -75,15 +75,6 @@ a {
   text-decoration: none;
 }
 
-.shop-text {
-  color: #ff0000;
-  font-size: 1rem;
-}
-
-.shop-text:hover {
-  color: #22eb08;
-}
-
 /* .index-brand {
   color: var(--dark);
   font-size: 2.5rem;
@@ -98,6 +89,7 @@ a {
   align-items: center;
   min-height: 4rem;
   padding: 0 3em;
+  margin-bottom: 4rem;
 }
 
 .nav-menu {
@@ -337,9 +329,7 @@ a.index-brand--index {
   min-height: 100%;
 }
 
-span {
-  color: #22eb08;
-}
+
 .gallery-images--text {
   font-size: 1rem;
   margin: 0 auto;
@@ -349,17 +339,38 @@ span {
   padding: 0 1em;
 }
 
-.gallery-images--para {
+/* .gallery-images--para {
   color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+} */
+
+.gallery-img--para {
+  color: #ffffff;
+  font-size: 1.3rem;
   line-height: 1.4;
   margin: 0 auto;
   text-align: center;
   width: 100%;
 }
 
-/* .gallery-h2 {
+.gallery-images--span {
+  color: #2281fc;
+  font-size: 1.2rem;
+}
+
+.shop-text {
   color: #ff0000;
-} */
+  font-size: 1rem;
+}
+
+.shop-text:hover {
+  color: #e9fa03;
+}
+
 .main-gallery {
   position: relative;
   margin-top: 1rem;
@@ -461,20 +472,21 @@ span {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 475px) {
+@media (max-width: 330px) {
   .hero-button {
-    font-size: 0.5rem;
+    background-color: #002fff;
+    border: 1px solid rgb(251, 255, 0);
+    color: #ffffff;
+    font-size: 0.5em;
+    font-weight: 700;
+    height: 1.5rem;
+    letter-spacing: 0.07rem;
+    padding: 0.4rem 1.5em;
+    right: 68%;
   }
-
-  /* a.index-brand--index {
-    font-size: 1.5rem;
-  } */
-
-  .nav-menu {
-    display: block;
-  }
-
-  a.nav-link {
+}
+@media (max-width: 475px) {
+    a.nav-link {
     color: #e5ff00;
     font-size: 1rem;
   }
@@ -500,12 +512,27 @@ span {
   a.index-brand--index {
     font-size: 1.5rem;
 }
+
+.gallery-images--para {
+  font-size: 1rem;
+}
 }
 
 
 @media (max-width: 650px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
   a.nav-link {
     color: #e5ff00;
+    font-size: 1rem;
+  }
+
+  .nav-link--gallery {
     font-size: 1rem;
   }
 
@@ -520,8 +547,20 @@ span {
     padding: 0 auto;
   }
 
+  .hero-button {
+    background-color: #002fff;
+    border: 1px solid rgb(0, 0, 0);
+    color: #ffffff;
+    font-size: 0.5em;
+    font-weight: 700;
+    height: 1.7rem;
+    letter-spacing: 0.07rem;
+    padding: 0.5rem 2em;
+    right: 68%;
+  }
+
   .shirts-button {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 
   .index-h1 {
