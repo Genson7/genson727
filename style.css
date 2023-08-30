@@ -253,6 +253,7 @@ a {
   align-items: center;
   margin: 0 auto;
   padding: 0;
+  margin-top: 2rem;
   width: 100%;
   max-width: 1280px;
 }
@@ -264,7 +265,7 @@ a {
 }
 
 .hero-image--01 {
-  border: 5px solid var(--lite);
+  /* border: 5px solid var(--lite); */
   margin: 0;
   padding: 0 auto;
   max-width: 70%;
