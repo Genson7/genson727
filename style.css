@@ -246,6 +246,10 @@ a {
 }
 
 /* =====HERO SECTION===== */
+.index-h1 {
+  color: #f17a43;
+  margin-bottom: 1rem;
+}
 
 .hero {
   display: flex;
