@@ -278,6 +278,9 @@ a.gallery-brand--index {
 
 /* GALLERY PAGE*/
 .gallery-images {
+  margin: 0 auto;
+  padding: 0 auto
+  ;
   min-height: 100%;
 }
 
