@@ -115,7 +115,8 @@ a {
   transition: 1s ease;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link--gallery:hover {
   color: #ff0000;
   transform: scale(1.1);
 }
@@ -433,8 +434,8 @@ a.gallery-brand--index {
 }
 
 @media screen and (max-width: 475px) {
-  a.nav-link,
-  a.nav-link--gallery {
+  .nav-link,
+  .nav-link--gallery {
     /* color: #e5ff00; */
     font-size: 1rem;
   }
@@ -484,12 +485,12 @@ a.gallery-brand--index {
     flex-direction: column;
   }
 
-  a.nav-link {
+  .nav-link {
     color: #e5ff00;
     font-size: 1rem;
   }
 
-  a.nav-link--gallery {
+  .nav-link--gallery {
     font-size: 1rem;
   }
 
