@@ -277,14 +277,14 @@ a.gallery-brand--index {
 /* END OF HERO SECTION */
 
 /* GALLERY PAGE*/
-.gallery-images {
+.gallery {
   margin: 0 auto;
   padding: 0 auto
   ;
   min-height: 100%;
 }
 
-.gallery-images--text {
+.gallery-text {
   font-size: 1rem;
   margin: 0 auto;
   margin-top: 3rem;
@@ -293,7 +293,7 @@ a.gallery-brand--index {
   padding: 0 1em;
 }
 
-.gallery-img--para {
+.gallery-para {
   color: #d8d2d2;
   font-size: 1.3rem;
   line-height: 1.4;
@@ -302,7 +302,7 @@ a.gallery-brand--index {
   width: 100%;
 }
 
-.gallery-images--span {
+.gallery-span {
   color: #ff0000;
   font-size: 1.2rem;
 }
@@ -322,7 +322,7 @@ a.gallery-brand--index {
   color: #e9fa03;
 }
 
-.main-gallery {
+.image-gallery {
   position: relative;
   margin-top: 1rem;
   width: 100vw;
