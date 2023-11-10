@@ -557,7 +557,7 @@ a.gallery-brand--index {
     background-color: rgba(0, 0, 0, 0.1);
     flex-direction: column;
     left: 100%;
-    top: 79px;
+    top: 50px;
     gap: 0;
     text-align: center;
     width: 100%;
@@ -577,7 +577,7 @@ a.gallery-brand--index {
   }
 
   .nav-link:hover {
-    color: crimson;
+    color: #dc143c;
   }
 
   .nav-menu.active {
