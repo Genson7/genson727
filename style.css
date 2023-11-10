@@ -98,7 +98,7 @@ a {
   align-items: center;
   /* this pushes the links to the right */
   /* margin: 0 0 5px auto; */
-  gap: 2em;
+  gap: 1em;
 }
 
 .nav-item {
@@ -137,7 +137,7 @@ a.gallery-brand--index {
   );
   background-clip: text;
   color: transparent; */
-  margin-top: 0.05em;
+  margin-top: 0.75rem;
   padding: 0.2em;
 }
 
