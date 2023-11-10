@@ -435,18 +435,18 @@ a.gallery-brand--index {
 @media screen and (max-width: 475px) {
   .nav-link,
   .nav-link--gallery {
-    color: #e5ff00;
+    /* color: #e5ff00; */
     font-size: 1rem;
   }
 
-  .nav-item--gallery {
+  /* .nav-item--gallery {
     color: var(--wht);
-  }
+  } */
 
-  .nav-link--gallery {
+  /* .nav-link--gallery {
     color: #fff;
     text-transform: uppercase;
-  }
+  } */
 
   .gallery-img--para,
   .gallery-images--span {
