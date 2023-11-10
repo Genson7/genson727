@@ -583,13 +583,13 @@ a.gallery-brand--index {
     left: 0;
   }
 
-  .nav-link--gallery {
+  /* .nav-link--gallery {
     color: #fff;
-  }
+  } */
 
-  .nav-link--gallery:hover {
+  /* .nav-link--gallery:hover {
     color: #00ff00;
-  }
+  } */
 }
 
 @media screen and (max-width: 933px) {
