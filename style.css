@@ -291,9 +291,9 @@ a.gallery-brand--index {
 }
 
 .gallery-text {
-  font-size: 1rem;
+  /* font-size: 1rem; */
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 1rem;
   text-align: center;
   max-width: 500px;
   padding: 0 1em;
@@ -304,6 +304,7 @@ a.gallery-brand--index {
   font-size: 1.3rem;
   line-height: 1.4;
   margin: 0 auto;
+  margin-bottom: 0.75rem;
   text-align: center;
   width: 100%;
 }
