@@ -433,8 +433,8 @@ a.gallery-brand--index {
 }
 
 @media screen and (max-width: 475px) {
-  .nav-link,
-  .nav-link--gallery {
+  a.nav-link,
+  a.nav-link--gallery {
     /* color: #e5ff00; */
     font-size: 1rem;
   }
@@ -489,7 +489,7 @@ a.gallery-brand--index {
     font-size: 1rem;
   }
 
-  .nav-link--gallery {
+  a.nav-link--gallery {
     font-size: 1rem;
   }
 
