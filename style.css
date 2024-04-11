@@ -101,6 +101,7 @@ a {
   gap: 1em;
 }
 
+
 .nav-item {
   list-style: none;
 }
@@ -125,7 +126,7 @@ a {
 a.index-brand--index,
 a.gallery-brand--index {
   font-size: clamp(1.3rem, 0.9667rem + 1.6667vw, 2.3rem);
-  color: #17c517;
+  color: #75ff03;
   /* background-image: linear-gradient(
     90deg,
     red,
@@ -145,6 +146,14 @@ a.gallery-brand--index {
  a.gallery-brand--index:hover {
   color: #ec6d31;
 }
+
+.index-brand--index {
+ background: linear-gradient(90deg, #e9fa03, #ff5100, #75f780);
+ border-radius: 100px;
+ padding: .25em .75em;
+ text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.9);
+}
+
 /* ====BURGER==== */
 
 .burger {
