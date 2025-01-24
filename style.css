@@ -38,7 +38,17 @@ img {
   max-width: 100%;
 }
 
-.index-html,
+.index-html {
+  background-color: #a17061;
+  /* font-size below is 18px */
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1280px;
+ }
 .gallery-html {
   background-color: #000;
   /* font-size below is 18px */
@@ -82,7 +92,7 @@ a {
 }
 
 .navbar {
-  background-color: #000;
+  background-color: #7a5549;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,7 +118,7 @@ a {
 
 .nav-link,
 .nav-link--gallery {
-  color: #b1682c;
+  color: #cf6d1d;
   font-size: 1.3rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -126,7 +136,7 @@ a {
 a.index-brand--index,
 a.gallery-brand--index {
   font-size: clamp(1.3rem, 0.9667rem + 1.6667vw, 2.3rem);
-  color: #09a809;
+  color: #cf6d1d;
   /* background-image: linear-gradient(
     90deg,
     red,
@@ -145,7 +155,7 @@ a.gallery-brand--index {
 
 .index-brand--index:hover,
  a.gallery-brand--index:hover {
-  color: #ec6d31;
+  color: #cf6d1d;
   text-decoration: none;
 }
 
@@ -166,7 +176,7 @@ a.gallery-brand--index {
 }
 
 .bar {
-  background-color: #e5ff00;
+  background-color: #d8c51b;
   display: block;
   height: 3px;
   width: 25px;
@@ -185,8 +195,8 @@ a.gallery-brand--index {
   display: inline-block;
   border: none;
   border-radius: 10px;
-  background-color: #ff5100;
-  color: #eeff00;
+  background-color: #802929;
+  color: #d8c51b;
   cursor: pointer;
   font-family: "Quicksand", sans-serif;
   font-size: 0.75rem;
@@ -207,8 +217,8 @@ a.gallery-brand--index {
   border: 2px solid #000;
   border-radius: 5px;
   background: none;
-  background-color: #eeff00;
-  color: #ff5100;
+  background-color: #d8c51b;
+  color: #802929;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
@@ -240,14 +250,14 @@ a.gallery-brand--index {
 }
 
 .hero-button:hover {
-  background-color: #e5ff00;
-  color: #ff5100;
+  background-color: #d8c51b;
+  color: #802929;
   border: 2px solid #000;
   overflow: hidden;
 }
 
 .shirts-button:hover {
-  color: #ff5100;
+  color: #802929;
   box-shadow: 0 5px 50px 0 #eeff00 inset, 0 5px 50px 0 #eeff00,
     0 5px 50px 0 #eeff00 inset, 0 5px 50px 0 #eeff00;
   overflow: hidden;
@@ -255,7 +265,7 @@ a.gallery-brand--index {
 
 /* =====HERO SECTION===== */
 .index-h1 {
-  color: #c5b207;
+  color: #d8c51b;
   margin-bottom: 1rem;
 }
 
@@ -276,6 +286,7 @@ a.gallery-brand--index {
 }
 
 .hero-image--01 {
+  border: 10px solid rgb(128, 41, 41);
   margin: 0;
   padding: 0 auto;
   max-width: 70%;
