@@ -459,9 +459,10 @@ a.gallery-brand--index {
 /* MEDIA QUERIES */
 @media screen and (max-width: 353px) {
   .hero-button {
-    background-color: #002fff;
-    border: 1px solid rgb(251, 255, 0);
-    color: #ffffff;
+    border: 2px solid #cf6d1d;
+    border-radius: 5px;
+    background-color: #d8c51b;
+    color: #cf6d1d;
     font-size: 0.5em;
     font-weight: 700;
     height: 1.5rem;
@@ -504,7 +505,7 @@ a.gallery-brand--index {
   }
 
   .bar {
-    background-color: #e5ff00;
+    background-color: #d8c51b;
     display: block;
     height: 2px;
     width: 18px;
@@ -524,7 +525,7 @@ a.gallery-brand--index {
   }
 
   .nav-link {
-    color: #e5ff00;
+    color: #d8c51b;
     font-size: 1rem;
   }
 
@@ -533,7 +534,7 @@ a.gallery-brand--index {
   }
 
   .bar {
-    background-color: #e5ff00;
+    background-color: #d8c51b;
     display: block;
     height: 2px;
     width: 18px;
@@ -609,13 +610,13 @@ a.gallery-brand--index {
   }
 
   .nav-link {
-    color: #e5ff00;
+    color: #d8c51b;
     text-shadow: var(--txt-shdo);
     z-index: 1;
   }
 
   .nav-link:hover {
-    color: #dc143c;
+    color: #cf6d1d;
   }
 
   .nav-menu.active {
