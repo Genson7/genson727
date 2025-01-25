@@ -50,7 +50,7 @@ img {
   max-width: 1280px;
  }
 .gallery-html {
-  background-color: #000;
+  background-color: #a17061;
   /* font-size below is 18px */
   font-size: 1.125rem;
   font-weight: 700;
@@ -195,7 +195,7 @@ a.gallery-brand--index {
   display: inline-block;
   border: none;
   border-radius: 10px;
-  background-color: #802929;
+  background-color: #791f1f;
   color: #d8c51b;
   cursor: pointer;
   font-family: "Quicksand", sans-serif;
@@ -257,7 +257,7 @@ a.gallery-brand--index {
 }
 
 .shirts-button:hover {
-  color: #802929;
+  color: #791f1f;
   box-shadow: 0 5px 50px 0 #eeff00 inset, 0 5px 50px 0 #eeff00,
     0 5px 50px 0 #eeff00 inset, 0 5px 50px 0 #eeff00;
   overflow: hidden;
@@ -286,7 +286,7 @@ a.gallery-brand--index {
 }
 
 .hero-image--01 {
-  border: 10px solid rgb(128, 41, 41);
+  border: 10px solid #791f1f;
   margin: 0;
   padding: 0 auto;
   max-width: 70%;
@@ -336,7 +336,7 @@ a.gallery-brand--index {
 }
 
 .gallery-span {
-  color: #ff0000;
+  color: #791f1f;
   font-size: 1.2rem;
 }
 
@@ -407,7 +407,7 @@ a.gallery-brand--index {
 }
 
 .copyright-02 {
-  background-image: linear-gradient(90deg,
+  /* background-image: linear-gradient(90deg,
       red,
       orange,
       yellow,
@@ -415,13 +415,14 @@ a.gallery-brand--index {
       #083deb,
       violet);
   background-clip: text;
-  color: transparent;
+  color: transparent; */
+  color: #11a81e;
   text-align: center;
 }
 
 .index-email,
 .gallery-email {
-  color: var(--wht);
+  color: var(--lite);
   font-size: 0.75rem;
   line-height: 2;
 }
