@@ -96,7 +96,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* min-height: 4rem; */
+  min-height: 6rem;
   padding: 0 3em;
   margin-bottom: 4.5rem;
 }
@@ -108,7 +108,7 @@ a {
   align-items: center;
   /* this pushes the links to the right */
   /* margin: 0 0 5px auto; */
-  gap: 1em;
+  gap: 3rem;
 }
 
 
@@ -136,7 +136,7 @@ a {
 a.index-brand--index,
 a.gallery-brand--index {
   font-size: clamp(1.3rem, 0.9667rem + 1.6667vw, 2.3rem);
-  color: #cf6d1d;
+  color: #ff7300;
   /* background-image: linear-gradient(
     90deg,
     red,
@@ -203,7 +203,7 @@ a.gallery-brand--index {
   font-weight: 700;
   height: 2rem;
   letter-spacing: 0.07rem;
-  margin: 0 auto;
+  margin: 0.5em auto;
   margin-left: 1em;
   padding: 1em 0.75em;
   outline: none;
@@ -345,7 +345,7 @@ a.gallery-brand--index {
 }
 
 .shop-text {
-  color: #75f780;
+  color: #12db23;
   font-size: 1rem;
   text-decoration: underline;
   text-transform: uppercase;
