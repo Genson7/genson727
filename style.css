@@ -655,7 +655,8 @@ a.gallery-brand--index {
     width: 100%;
     transition: 1s ease-in-out;
     position: absolute;
-    margin-top: .75rem;
+    /* margin-top: .75rem; */
+    margin-top: 1rem;
   }
 
   .nav-item {
