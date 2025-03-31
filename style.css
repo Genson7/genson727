@@ -1,10 +1,10 @@
 :root {
   --dark: #000;
-  --lite: #c6c5da;
+  --lite: #94b9c0;
   --lite-teal: #53939e;
   --med-teal: #0d5461;
   --dark-teal: #204950;
-  --wht: #fff;
+  --wht-teal: #c4d6da;
   --txt-shdw: -1.5px 1.5px #272726;
 }
 
