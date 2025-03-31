@@ -263,7 +263,7 @@ a.gallery-brand--index {
   background-color: #d8c51b;
   color: #ff5100;
   border: 2px solid #cf6d1d;
-  /* overflow: hidden; */
+  overflow: hidden; 
 }
 
 .shirts-button:hover {
@@ -364,39 +364,59 @@ a.gallery-brand--index {
   color: var(--dark-teal);
 }
 
+/* MAIN GALLERY */
 .main-gallery {
-  background-color: #fff0e7;
+  background-color: var(--dark);
   position: relative;
-  /* margin-top: 1rem; */
-  width: 100vw;
-  /* min-height: 100%; */
-  /* padding: 0 2rem; */
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0 2rem;
   padding-bottom: 1rem;
   text-align: center;
+  box-shadow: var(--txt-shdo);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.images-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.sitez {
+  background-color: #17353a;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  padding: 0.75em 1em;
+  width: 100%;
+}
+.site-img {
+  background-color: var(--dark-teal);
+  border-radius: 20px;
+  box-shadow: -8px 8px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  width: 375px;
 }
 
 .gallery-text {
   display: inline-block;
-  background-color: #eecaca;
-  color: #ff5100;
+  background-color: var(--lite-teal);
+  color: var(--wht-teal);
   border-radius: 20px;
   font-size: 1.7rem;
   margin-top: 1.5rem;
   padding: 0.5em;
 }
-
-.images-gallery {
-  border: 10pd solid ;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 1280px;
-  width: 100%;
-}
-
 
 /* FOOTER */
 .index-footer,
