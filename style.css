@@ -263,7 +263,7 @@ a.gallery-brand--index {
   background-color: #d8c51b;
   color: #ff5100;
   border: 2px solid #cf6d1d;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .shirts-button:hover {
