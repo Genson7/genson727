@@ -94,8 +94,7 @@ a {
   max-height: 4rem;
 }
 
-.navbar,
-.navbar-gallery {
+.navbar {
   background-color: #000000;
   display: flex;
   justify-content: space-between;
@@ -106,6 +105,12 @@ a {
 
 .navbar-gallery {
   background-color: var(--lite) !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  padding-right: 3em;
+
 }
 
 .nav-menu {
