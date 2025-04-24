@@ -105,7 +105,7 @@ a {
 }
 
 .navbar-gallery {
-  background-color: var(--lite);
+  background-color: var(--lite) !important;
 }
 
 .nav-menu {
