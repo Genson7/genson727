@@ -610,8 +610,6 @@ a {
     margin: 3px auto;
     transition: all 0.3s ease-in-out;
   }
-
-
 }
 
 @media (max-width: 650px) {
@@ -701,7 +699,7 @@ a {
   }
 
   .nav-menu {
-    background-color: rgba(0, 0, 0, 0.07);
+    /* background-color: rgba(0, 0, 0, 0.07); */
     flex-direction: column;
     left: 100%;
     top: 79px;
