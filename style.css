@@ -319,7 +319,6 @@ a {
 }
 
 .hero-container {
-  border: 5px solid blue;
   margin: 0 auto;
   width: 100%;
   margin-top: 2em;
@@ -328,7 +327,7 @@ a {
 .hero-flex {
   /* margin: 0;
   padding: 0; */
-  border: 2px solid lime;
+  /* border: 2px solid lime; */
   /* margin-top: 2em; */
 }
 
