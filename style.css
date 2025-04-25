@@ -145,6 +145,7 @@ a {
   text-decoration-style: none;
   text-shadow: var(--txt-shdo);
   transition: 1s ease;
+  padding: 0.4em;
 }
 
 .nav-link:hover {
