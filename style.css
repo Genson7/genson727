@@ -198,6 +198,7 @@ a {
   cursor: pointer;
   /* this makes the burger disappear when the screen is wider than 800px */
   display: none;
+  padding: 1.5rem;
 }
 
 .bar-index,
