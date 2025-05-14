@@ -85,7 +85,9 @@ a:link {
 }
 
 a {
-  text-decoration-style: none;
+  list-style: none;
+  text-decoration: none;
+
 }
 
 .header {
@@ -123,7 +125,9 @@ a {
 .nav-item--index,
 .nav-item--gallery {
   list-style: none;
+  text-decoration: none;
 }
+
 
 .nav-link {
   color: #cf6d1d;
