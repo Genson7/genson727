@@ -132,6 +132,7 @@ a {
 .nav-link {
   color: #cf6d1d;
   font-size: 1.3rem;
+  list-style: none;
   text-transform: uppercase;
   text-decoration: none;
   text-decoration-style: none;
@@ -143,6 +144,7 @@ a {
 .nav-link--gallery {
   color: var(--dark-teal);
   font-size: 1.3rem;
+  list-style: none;
   text-transform: uppercase;
   text-decoration: none;
   text-decoration-style: none;
@@ -575,6 +577,7 @@ a {
   .nav-link--gallery {
     /* color: #d8c51b; */
     font-size: 1rem;
+    list-style: none;
     /* padding-top: 1rem; */
   }
 
@@ -740,6 +743,7 @@ a {
   .nav-link {
     color: #791f1f;
     font-weight: 700;
+    list-style: none;
     text-shadow: -1.5px 1.5px #b3b0c9;
     z-index: 1;
   }
@@ -755,6 +759,7 @@ a {
   .nav-link--gallery {
     color: var(--lite-teal);
     font-weight: 700;
+    list-style: none;
     text-shadow: var(--txt-shdw);
     z-index: 1;
   }
