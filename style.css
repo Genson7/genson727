@@ -157,6 +157,7 @@ nav {
 .burger {
   cursor: pointer;
   display: none;
+  position: relative;
 }
 
 .burger div {
@@ -563,7 +564,7 @@ nav {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 353px) {
-  .hero-button {
+  /* .hero-button {
     border: 2px solid #cf6d1d;
     border-radius: 5px;
     background-color: #d8c51b;
@@ -574,7 +575,7 @@ nav {
     letter-spacing: 0.07rem;
     padding: 0.4rem 1.5em;
     right: 68%;
-  }
+  } */
 }
 
 /* MEDIA QUERIES */
@@ -604,7 +605,7 @@ nav {
   .nav-link--gallery {
     font-size: 1rem;
   }
-  .burger {
+  .burger div {
     display: block;
     height: 2px;
     width: 18px;
@@ -621,7 +622,7 @@ nav {
     transition: all 0.3s ease-in-out;
   }
 
-  .hero-image--01 {
+  /* .hero-image--01 {
     display: none;
   }
 
@@ -630,19 +631,13 @@ nav {
     border-top: 5px solid var(--lite);
     border-bottom: 5px solid var(--lite);
     padding: 0 auto;
-  }
+  } */
 
   .hero-button {
-    background-color: #096559;
-    border: 2px solid #000000;
-    /* border-radius: 5px; */
-    color: #d8c51b;
-    font-size: 0.6rem;
-    font-weight: 700;
-    height: 2rem;
-    letter-spacing: 0.07rem;
+
     padding: 0.5em 2em;
-    right: 68%;
+     right: 50%;
+    left: 50%;
   }
 
   .shirts-button {
@@ -701,7 +696,7 @@ nav {
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 650px) {
   /* nav {
     position: absolute;
     top: 4.375rem
@@ -765,6 +760,7 @@ nav {
   }
   .burger {
     display: block;
+    box-sizing: content-box;
     height: 2px;
     width: 18px;
     margin: 3px auto;
@@ -781,28 +777,30 @@ nav {
   }
 
 
-   .hero-image--01 {
-    display: none;
-  }
+   /* .hero-image--01 {
+    display: inline-block;
+    margin: 0 auto;
+  } */
 
-  .hero-image--02 {
+  /* .hero-image--02 {
     display: block;
     border-top: 5px solid rgb(4, 126, 110);
     border-bottom: 5px solid rgb(4, 126, 110);
     padding: 0 auto;
-  }
+  } */
 
   .hero-button {
-    background-color: #096559;
-    border: 2px solid #000000;
-    /* border-radius: 5px; */
-    color: #d8c51b;
+    /* background-color: var(--lite);
+    border: 2px solid var(--dark);
+    color: #d8c51b; */
     font-size: 0.6rem;
-    font-weight: 700;
+    /* font-weight: 700; */
     height: 2rem;
     letter-spacing: 0.07rem;
     padding: 0.5em 2em;
-    right: 68%;
+    /* right: 50%;
+    left: 50%; */
+    z-index: 1;
   }
 
   .shirts-button {
