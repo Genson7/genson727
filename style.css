@@ -253,7 +253,7 @@ nav {
   border-radius: 5px;
   background: none;
   background-color:var(--dark-teal);
-  color: #ff7300;
+  color: #00ff00;
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
@@ -293,9 +293,9 @@ nav {
 }
 
 .shirts-button:hover {
-  color: #ff5100;
-  box-shadow: 0 5px 50px 0 #d8c51b inset, 0 5px 50px 0 #d8c51b,
-    0 5px 50px 0 #d8c51b inset, 0 5px 50px 0 #d8c51b;
+  color: #d9ff00;
+  box-shadow: 0 5px 50px 0 #00ff00 inset, 0 5px 50px 0 #00ff00,
+    0 5px 50px 0 #00ff00 inset, 0 5px 50px 0 #00ff00;
   /* overflow: hidden; */
 }
 
@@ -518,7 +518,7 @@ nav {
 }
 
 .footer-button:hover {
-  color: var(--lite-teal);
+  color: var(--wht-teal);
 }
 
 /* SOCIAL LINKS */
