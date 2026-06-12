@@ -8,7 +8,7 @@
   --wht-teal: #c3cadf;
   --wht: #ffffff;
   --txt-shdw: -1.3px 1.3px #262627;
-  --txt-shdw2: -0.5px 0.5px #c3cadf;
+  --txt-shdw2: -0.5px 0.5px 1px #c3cadf;
 }
 
 *,
@@ -140,13 +140,13 @@ nav {
 }
 
 .nav-links a {
-  color: var(--dark);
+  color: var(--lite);
   font-size: 1.3rem;
   font-weight: 700;
   /* margin-left: 1em; */
   padding: 0 1.25rem;
   text-shadow: var(--txt-shdw2);
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
 }
 
 .nav-links a:hover {
@@ -163,6 +163,7 @@ nav {
   cursor: pointer;
   display: none;
   position: relative;
+  padding: 2em;
 }
 
 .burger div {
@@ -170,7 +171,7 @@ nav {
   margin: 5px;
   height: 3px;
   width: 25px;
-  transition: all 0.1s ease;
+    transition: all 0.1s ease;
 }
 
 .burger:after,
@@ -392,7 +393,7 @@ nav {
 }
 
 .gallery-images--span {
-  color: var(--dark-teal);
+  color: var(--lite-teal);
   font-size: 1.2rem;
   font-weight: 700;
   text-shadow: none;
@@ -688,8 +689,13 @@ nav {
     padding: 0.5em 0 0 0;
   }
 
-  .navbar,
+  /* .navbar,
   .navbar-gallery {
+    flex-direction: column;
+    height: 6rem;
+  } */
+
+  .nav {
     flex-direction: column;
     height: 6rem;
   }
@@ -753,8 +759,10 @@ nav {
     overflow-x: hidden;
   }
 
-  .nav-links {
-    background-color: rgba(0, 0, 0, 0.2);
+  .nav-links{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    /* background-color: #000; */
     padding: 1.5rem 0;
     display: flex;
     align-items: center;
