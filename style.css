@@ -4,11 +4,11 @@
   --lite-teal: #6172ab;
   --med-teal: #4d60a0;
   --dark-teal: #3a4f96;
-  --dark-dark:#222f5a;
+  --dark-dark: #222f5a;
   --wht-teal: #c3cadf;
   --wht: #ffffff;
   --txt-shdw: -1.3px 1.3px #262627;
-  --txt-shdw2: -.75px .75px #c3cadf;
+  --txt-shdw2: -0.75px 0.75px #c3cadf;
 }
 
 *,
@@ -82,6 +82,7 @@ a {
 
 .index-html {
   background: linear-gradient(90deg, var(--dark-dark), var(--lite-teal));
+
 }
 
 .gallery-html {
@@ -90,7 +91,13 @@ a {
 
 .header {
   width: 100%;
-  background: linear-gradient(90deg, #0a0f29, var(--med-teal), var(--lite-teal), var(--lite-teal));
+  background: linear-gradient(
+    90deg,
+    #0a0f29,
+    var(--med-teal),
+    var(--lite-teal),
+    var(--lite-teal)
+  );
   /* display: flex; */
   /* Below pushed the logo to the left and the links to the right */
   /* justify-content: space-between; */
@@ -103,7 +110,6 @@ a {
 }
 
 .logo {
-
   background-image: linear-gradient(90deg, var(--lite-teal), var(--wht-teal));
   background-clip: text;
   color: transparent;
@@ -124,17 +130,16 @@ nav {
   width: 100%;
 }
 
- .nav-links {
+.nav-links {
   /* this puts the items horizontal */
   display: flex;
   /* this (along with the width) gives space in between the links */
   justify-content: space-between;
   align-items: center;
   list-style: none;
+}
 
- }
-
- .nav-links a {
+.nav-links a {
   color: var(--dark-dark);
   font-size: 1.3rem;
   font-weight: 700;
@@ -142,16 +147,16 @@ nav {
   padding: 0 1.25rem;
   text-shadow: var(--txt-shdw2);
   /* text-transform: uppercase; */
- }
+}
 
- .nav-links a:hover {
+.nav-links a:hover {
   color: var(--wht-teal);
- }
+}
 
- .nav-bit {
+.nav-bit {
   list-style: none;
   text-decoration: none;
- }
+}
 
 /* HAMBURGER MENU */
 .burger {
@@ -168,22 +173,22 @@ nav {
   transition: all 0.1s ease;
 }
 
-.burger:after, .burger:before {
-  content: '';
-	    width: 100%;
-	    height:4px;
-	    position:absolute;
+.burger:after,
+.burger:before {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
 }
 
 .burger:after {
-	    bottom:0px;
-	    left:0;
-	}
-	.burger:before {
-	    top:6px;
-	    left:0;
-	}
-
+  bottom: 0px;
+  left: 0;
+}
+.burger:before {
+  top: 6px;
+  left: 0;
+}
 
 /* LOGO */
 .index-brand--index,
@@ -252,7 +257,7 @@ nav {
   border: 2px solid var(--wht-teal);
   border-radius: 5px;
   background: none;
-  background-color:var(--dark-teal);
+  background-color: var(--dark-teal);
   color: #00ff00;
   cursor: pointer;
   font-size: 1rem;
@@ -260,6 +265,7 @@ nav {
   height: 2.5rem;
   letter-spacing: 0.09rem;
   padding: 0.5em 2em;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   margin: 0 auto;
@@ -287,15 +293,18 @@ nav {
 
 .hero-button:hover {
   background-color: var(--dark-dark);
-  color: var(--wht-teal );
+  color: var(--wht-teal);
   border: 2px solid var(--wht-teal);
   overflow: hidden;
 }
 
 .shirts-button:hover {
   color: #d9ff00;
-  box-shadow: 0 5px 50px 0 #00ff00 inset, 0 5px 50px 0 #00ff00,
-    0 5px 50px 0 #00ff00 inset, 0 5px 50px 0 #00ff00;
+  box-shadow:
+    0 5px 50px 0 #00ff00 inset,
+    0 5px 50px 0 #00ff00,
+    0 5px 50px 0 #00ff00 inset,
+    0 5px 50px 0 #00ff00;
   /* overflow: hidden; */
 }
 
@@ -365,7 +374,6 @@ nav {
   text-align: center;
   max-width: 500px;
   padding: 0 1em;
-
 }
 
 .gallery-img--para {
@@ -381,13 +389,13 @@ nav {
   /* text-shadow: -1px -1px #000; */
   text-shadow: var(--txt-shdw);
   width: 100%;
-
 }
 
 .gallery-images--span {
-  color: var(--wht-teal);
+  color: var(--dark-teal);
   font-size: 1.2rem;
   font-weight: 700;
+  text-shadow: none;
 }
 
 .genson-span {
@@ -398,7 +406,7 @@ nav {
 
 .shop-text {
   display: inline-block;
-  background: linear-gradient(90deg, #602d91 ,var(--wht-teal), var(--med-teal));
+  background: linear-gradient(90deg, #602d91, var(--wht-teal), var(--med-teal));
   border-radius: 20px;
   color: #fff;
   font-size: 1rem;
@@ -409,7 +417,9 @@ nav {
 }
 
 .shop-text:hover {
-  color: var(--dark-teal);
+  color: var(--wht);
+  font-weight: 700;
+  text-shadow: none;
 }
 
 /* MAIN GALLERY */
@@ -563,28 +573,10 @@ nav {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 353px) {
-  /* .hero-button {
-    border: 2px solid #cf6d1d;
-    border-radius: 5px;
-    background-color: #d8c51b;
-    color: #cf6d1d;
-    font-size: 0.5em;
-    font-weight: 700;
-    height: 1.5rem;
-    letter-spacing: 0.07rem;
-    padding: 0.4rem 1.5em;
-    right: 68%;
-  } */
-}
-
-/* MEDIA QUERIES */
-@media (max-width: 650px) {
-
-.index-brand--index,
+/* @media (max-width: 650px) {
+  .index-brand--index,
   .gallery-brand--index {
     padding: 0.5em 0 0 0;
-
   }
 
   .navbar,
@@ -622,21 +614,9 @@ nav {
     transition: all 0.3s ease-in-out;
   }
 
-  /* .hero-image--01 {
-    display: none;
-  }
-
-  .hero-image--02 {
-    display: block;
-    border-top: 5px solid var(--lite);
-    border-bottom: 5px solid var(--lite);
-    padding: 0 auto;
-  } */
-
   .hero-button {
-
     padding: 0.5em 2em;
-     right: 50%;
+    right: 50%;
     left: 50%;
   }
 
@@ -656,7 +636,7 @@ nav {
   .footer-button {
     font-size: 1.2rem;
   }
-}
+} */
 
 @media screen and (max-width: 495px) {
   .gallery-img--para {
@@ -679,7 +659,7 @@ nav {
     font-size: 0.75rem;
     padding: 0.5rem 0.75rem;
     font-weight: 700;
-    max-height: 2rem;
+    max-height: 2.2rem;
     letter-spacing: 0.09rem;
   }
 
@@ -701,49 +681,11 @@ nav {
   }
 }
 
-
 @media screen and (max-width: 650px) {
-  /* nav {
-    position: absolute;
-    top: 4.375rem
-    ;
-    left: 0;
-    background: linear-gradient(180deg, #0f172a, var(--med-teal));
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.9375rem;
-    padding: 1.5625rem;
-    display: none;
-  } */
 
-  /* .nav-links {
-    background-color: rgb(4, 3, 32);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-size: 1.2rem;
-    position: absolute;
-    right: 0; */
-    /* this pushes the menu to the far side when the screen is large. To not see the menu, we add body{overflow-x:hidden (above); */
-    /* transform: translateX(100%); */
-    /* the width can be smaller or larger if we want */
-    /* max-width: 38%; */
-    /* transition: transform 0.5s ease-in;
-    z-index: 1;
-  } */
-
-  /* .burger {
-    display: block;
-  }
-
-  .logo {
-    font-size: 1.2rem;
-  } */
-   .index-brand--index,
+  .index-brand--index,
   .gallery-brand--index {
     padding: 0.5em 0 0 0;
-
   }
 
   .navbar,
@@ -764,6 +706,7 @@ nav {
   .nav-link--gallery {
     font-size: 1rem;
   }
+
   .burger {
     display: block;
     box-sizing: content-box;
@@ -782,35 +725,12 @@ nav {
     transition: all 0.3s ease-in-out;
   }
 
-
-   /* .hero-image--01 {
-    display: inline-block;
-    margin: 0 auto;
-  } */
-
-  /* .hero-image--02 {
-    display: block;
-    border-top: 5px solid rgb(4, 126, 110);
-    border-bottom: 5px solid rgb(4, 126, 110);
-    padding: 0 auto;
-  } */
-
   .hero-button {
-    /* background-color: var(--lite);
-    border: 2px solid var(--dark);
-    color: #d8c51b; */
     font-size: 0.6rem;
-    /* font-weight: 700; */
     height: 2rem;
     letter-spacing: 0.07rem;
     padding: 0.5em 2em;
-    /* right: 50%;
-    left: 50%; */
     z-index: 1;
-  }
-
-  .shirts-button {
-    font-size: 0.8rem;
   }
 
   .index-h1 {
@@ -825,11 +745,10 @@ nav {
   .footer-button {
     font-size: 1.2rem;
   }
-
 }
 
 @media (max-width: 850px) {
-   /* We added this after we added transform translateX to the .nav-links(below) */
+  /* We added this after we added transform translateX to the .nav-links(below) */
   body {
     overflow-x: hidden;
   }
@@ -868,9 +787,9 @@ nav {
   .nav-active {
     transform: translateX(0%);
   }
-  }
+}
 
-  /* ====KEYFRAMES==== */
+/* ====KEYFRAMES==== */
 @keyframes navLinkFade {
   from {
     opacity: 0;
