@@ -8,7 +8,7 @@
   --wht-teal: #c3cadf;
   --wht: #ffffff;
   --txt-shdw: -1.3px 1.3px #262627;
-  --txt-shdw2: -0.5px 0.5px 1px #c3cadf;
+  --txt-shdw2: -0.5px -0.5px 1px #ffffff;
 }
 
 *,
@@ -82,7 +82,6 @@ a {
 
 .index-html {
   background: linear-gradient(90deg, var(--dark-dark), var(--lite-teal));
-
 }
 
 .gallery-html {
@@ -119,76 +118,64 @@ a {
 }
 
 /* NAVIGATION BAR */
+/* ====NAVIGATION==== */
 nav {
-  /* background: linear-gradient(90deg, #0a0f29, var(--med-teal), var(--lite-teal), var(--lite-teal)); */
   display: flex;
   /* this puts space between the logo and the list items */
   justify-content: space-around;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 0 5px auto;
+  /* padding: 1em 2em; */
   min-height: 2.5vh;
   width: 100%;
 }
-
 .nav-links {
   /* this puts the items horizontal */
   display: flex;
   /* this (along with the width) gives space in between the links */
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
+  justify-content: space-around;
+  list-style-type: none;
+  /* width: 30%; */
 }
-
 .nav-links a {
-  color: var(--lite);
-  font-size: 1.3rem;
+  color: var(--dark-dark);
+  font-size: 1.3em;
   font-weight: 700;
-  /* margin-left: 1em; */
-  padding: 0 1.25rem;
+  padding: 0 30px;
+  text-decoration: none;
   text-shadow: var(--txt-shdw2);
   text-transform: uppercase;
 }
-
 .nav-links a:hover {
-  color: var(--wht-teal);
+  color: rgb(255, 255, 255);
+  display: flex;
+  /* transform: rotate(-45deg); */
+  transition: all 0.5s ease-in-out;
 }
 
-.nav-bit {
-  list-style: none;
-  text-decoration: none;
+.vector {
+  padding: 10px;
+}
+h1 {
+  color: #d0d0e0;
+  font-size: 4.5rem;
+  letter-spacing: 4px;
+  text-shadow: -2px 2px 15px rgba(58, 61, 241, 0.8);
 }
 
-/* HAMBURGER MENU */
+/* ====BURGER==== */
 .burger {
   cursor: pointer;
+  /* this makes the burger disappear */
   display: none;
-  position: relative;
-  padding: 2em;
+  padding: 1em;
 }
-
 .burger div {
-  background-color: var(--dark-teal);
+  background-color: var(--dark-dark);
   margin: 5px;
   height: 3px;
   width: 25px;
-    transition: all 0.1s ease;
-}
-
-.burger:after,
-.burger:before {
-  content: "";
-  width: 100%;
-  height: 4px;
-  position: absolute;
-}
-
-.burger:after {
-  bottom: 0px;
-  left: 0;
-}
-.burger:before {
-  top: 6px;
-  left: 0;
+  transition: all 0.3s ease;
 }
 
 /* LOGO */
@@ -319,10 +306,12 @@ nav {
 
 /* =====HERO SECTION===== */
 .index-h1 {
+  /* background-color: red; */
   color: var(--wht-teal);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   padding: 1rem 0;
+  text-shadow: var(--txt-shdw);
 }
 
 .hero {
@@ -639,7 +628,17 @@ nav {
   }
 } */
 
-@media screen and (max-width: 495px) {
+@media screen and (max-width: 400px) {
+  .nav-links li {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .nav-links li a {
+    max-width: 38%;
+    padding: 0 1rem;
+  }
+
   .gallery-img--para {
     font-size: 1rem;
     padding: 1rem;
@@ -672,64 +671,71 @@ nav {
     color: #00ff00;
   }
 
-  .bar-index,
+  /* .bar-index,
   .bar-gallery {
     display: block;
     height: 2px;
     width: 18px;
     margin: 3px auto;
     transition: all 0.3s ease-in-out;
-  }
+  } */
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 575px) {
+  body {
+    /* We added this after we added transform translateX to the .nav-links(below) */
+    overflow-x: hidden;
+  }
 
   .index-brand--index,
   .gallery-brand--index {
     padding: 0.5em 0 0 0;
   }
 
-  /* .navbar,
-  .navbar-gallery {
+  .nav-links {
+    background-color: rgb(217, 216, 230);
+    display: flex;
+    align-items: center;
     flex-direction: column;
-    height: 6rem;
-  } */
-
-  .nav {
-    flex-direction: column;
-    height: 6rem;
-  }
-
-  .nav-menu {
-    margin: 0;
-  }
-
-  .nav-link {
-    color: #d8c51b;
+    /* height: 92vh; */
+    /* height: 600px; */
     font-size: 1rem;
-  }
-
-  .nav-link--gallery {
-    font-size: 1rem;
-  }
-
-  .burger {
-    display: block;
-    box-sizing: content-box;
-    height: 2px;
-    width: 18px;
-    margin: 3px auto;
+    position: absolute;
+    right: 0;
+    top: 2vh;
+    /* this pushes the menu to the far side when the screen is large. To not see the menu, we add body{overflow-x:hidden (above); */
+    transform: translateX(100%);
+    /* the width can be smaller or larger if we want */
+    max-width: 38%;
+    transition: transform 0.5s ease-in;
     z-index: 1;
   }
+  .nav-links li {
+    /* this is so when we click on the burger the links will fade in nicely */
+    opacity: 0;
+    font-size: 1rem;
+  }
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .burger {
+    display: block;
+  }
 
-  .bar-index,
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+
+
+  /* .bar-index,
   .bar-gallery {
     display: block;
     height: 2px;
     width: 18px;
     margin: 3px auto;
     transition: all 0.3s ease-in-out;
-  }
+  } */
 
   .hero-button {
     font-size: 0.6rem;
@@ -753,22 +759,40 @@ nav {
   }
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 40em) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2rem;
+    /* height: 92vh; */
+    /* height: 522px; */
+    position: absolute;
+    right: 0;
+    /* top: 2vh; */
+    /* this pushes the menu to the far side when the screen is large. To not see the menu, we add body{overflow-x:hidden (above); */
+    transform: translateX(100%);
+    /* the width can be smaller or larger if we want */
+    /* max-width: 38%; */
+    transition: transform 0.5s ease-in;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 800px) {
   /* We added this after we added transform translateX to the .nav-links(below) */
   body {
     overflow-x: hidden;
   }
 
-  .nav-links{
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    /* background-color: #000; */
-    padding: 1.5rem 0;
+  .nav-links {
+    background-color: rgba(50, 62, 102, 0.7);
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: 1.2rem;
     height: 20vh;
+    /* height: 522px; */
     position: absolute;
     right: 0;
     top: 2.5vh;
@@ -784,7 +808,7 @@ nav {
     opacity: 0;
   }
 
-  .nav-links a {
+  .nav-links li a {
     font-size: 1.2rem;
   }
 
@@ -797,6 +821,11 @@ nav {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .logo {
+    padding: 10px;
+  }
+}
 /* ====KEYFRAMES==== */
 @keyframes navLinkFade {
   from {
