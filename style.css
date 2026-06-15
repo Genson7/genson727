@@ -97,28 +97,23 @@ a {
     var(--lite-teal),
     var(--lite-teal)
   );
-  /* display: flex; */
-  /* Below pushed the logo to the left and the links to the right */
-  /* justify-content: space-between; */
-  /* align-items: center; */
+  display: flex;
+  /* Below pushed the logo to the left and the links to the right  */
+  justify-content: space-between;
+  align-items: center;
   padding: 1.125rem 2rem;
-  /* position: sticky; */
-  /* top: 0; */
-  /* z-index: 999; */
+  position: sticky;
+  top: 0;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
   z-index: 9999;
 }
 
 .logo {
-  background-image: linear-gradient(90deg, var(--lite-teal), var(--wht-teal));
-  background-clip: text;
-  color: transparent;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  height: auto;          /* Maintains the correct aspect ratio */
+  display: block;        /* Removes inline spacing bugs */
+  width: clamp(120px, 15vw, 200px);
 }
 
-/* NAVIGATION BAR */
 /* ====NAVIGATION==== */
 nav {
   display: flex;
@@ -761,11 +756,6 @@ h1 {
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .logo {
-    padding: 7px;
-  }
-}
 /* ====KEYFRAMES==== */
 @keyframes navLinkFade {
   from {
