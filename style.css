@@ -101,7 +101,7 @@ a {
   /* Below pushed the logo to the left and the links to the right */
   /* justify-content: space-between; */
   /* align-items: center; */
-  padding: 1.125rem 2.5rem;
+  padding: 1.125rem 2rem;
   /* position: sticky; */
   /* top: 0; */
   /* z-index: 999; */
@@ -113,7 +113,7 @@ a {
   background-image: linear-gradient(90deg, var(--lite-teal), var(--wht-teal));
   background-clip: text;
   color: transparent;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1px;
 }
