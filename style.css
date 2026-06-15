@@ -754,6 +754,11 @@ h1 {
   .nav-active {
     transform: translateX(0%);
   }
+
+  .logo {
+  height: auto;
+  display: block;       
+  width: clamp(120px, 15vw, 200px);
 }
 
 /* ====KEYFRAMES==== */
