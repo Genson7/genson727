@@ -377,8 +377,6 @@ h1 {
   margin: 0 auto;
   padding: 1em;
   text-align: center;
-  /* text-shadow: -1px -1px #000; */
-  text-shadow: var(--txt-shdw);
   width: 100%;
 }
 
@@ -392,23 +390,23 @@ h1 {
 .genson-span {
   color: #fff;
   font-size: 1.5rem;
-  text-shadow: var(--txt-shdw);
+  /* text-shadow: var(--txt-shdw);  */
 }
 
 .shop-text {
   display: inline-block;
-  background: linear-gradient(90deg, #602d91, var(--wht-teal), var(--med-teal));
+  background: linear-gradient(90deg, #602d91, var(--lite), var(--med-teal));
   border-radius: 20px;
-  color: #fff;
+  color: var(--wht);
   font-size: 1rem;
   margin: 1em 0;
   padding: 0.5em 2em;
-  text-shadow: var(--txt-shdw);
+  /* text-shadow: var(--txt-shdw); */
   text-transform: uppercase;
 }
 
 .shop-text:hover {
-  color: var(--wht);
+  color: var(--dark-dark);
   font-weight: 700;
   text-shadow: none;
 }
@@ -470,7 +468,7 @@ h1 {
   color: var(--wht-teal);
   border-radius: 20px;
 
-  font-size: clamp(1rem, 0.9667rem + 1.6667vw, 1.5rem);
+  font-size: clamp(0.75rem, 0.9667rem + 1.6667vw, 1.3rem);
   margin-top: 1.5rem;
   padding: 0.5em;
 }
@@ -563,72 +561,6 @@ h1 {
   padding: 0.25em;
 }
 
-/* MEDIA QUERIES */
-/* @media (max-width: 650px) {
-  .index-brand--index,
-  .gallery-brand--index {
-    padding: 0.5em 0 0 0;
-  }
-
-  .navbar,
-  .navbar-gallery {
-    flex-direction: column;
-    height: 6rem;
-  }
-
-  .nav-menu {
-    margin: 0;
-  }
-
-  .nav-link {
-    color: #d8c51b;
-    font-size: 1rem;
-  }
-
-  .nav-link--gallery {
-    font-size: 1rem;
-  }
-  .burger div {
-    display: block;
-    height: 2px;
-    width: 18px;
-    margin: 3px auto;
-    z-index: 1;
-  }
-
-  .bar-index,
-  .bar-gallery {
-    display: block;
-    height: 2px;
-    width: 18px;
-    margin: 3px auto;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .hero-button {
-    padding: 0.5em 2em;
-    right: 50%;
-    left: 50%;
-  }
-
-  .shirts-button {
-    font-size: 0.8rem;
-  }
-
-  .index-h1 {
-    font-size: 1rem;
-  }
-
-  .index-h3,
-  .gallery-h3 {
-    font-size: 1rem;
-  }
-
-  .footer-button {
-    font-size: 1.2rem;
-  }
-} */
-
 @media screen and (max-width: 400px) {
   .nav-links li {
     font-size: 1rem;
@@ -651,9 +583,13 @@ h1 {
     font-size: 1.3rem;
   }
 
+  .gallery-text {
+    font-size: 1rem;
+  }
+
   .shop-text {
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
   .shirts-button {
@@ -721,6 +657,7 @@ h1 {
   }
   .burger {
     display: block;
+
   }
 
   .nav-active {
@@ -826,7 +763,7 @@ h1 {
 
 @media screen and (max-width: 1000px) {
   .logo {
-    padding: 10px;
+    padding: 8px;
   }
 }
 /* ====KEYFRAMES==== */
