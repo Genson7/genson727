@@ -757,9 +757,8 @@ h1 {
 
   .logo {
   height: auto;
-  display: block;       
+  display: block;
   width: clamp(120px, 15vw, 200px);
-}
 
 /* ====KEYFRAMES==== */
 @keyframes navLinkFade {
