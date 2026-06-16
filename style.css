@@ -759,6 +759,8 @@ h1 {
   height: auto;
   display: block;
   width: clamp(120px, 15vw, 200px);
+  }
+}
 
 /* ====KEYFRAMES==== */
 @keyframes navLinkFade {
@@ -781,3 +783,4 @@ h1 {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+  
